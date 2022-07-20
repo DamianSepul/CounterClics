@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CounterClics/static/css/main.616e4f1e.css",
+    "main.js": "/CounterClics/static/js/main.b0f3712b.js",
+    "static/media/logo.png": "/CounterClics/static/media/logo.2e9d4af65fe78a6e0d7e.png",
+    "index.html": "/CounterClics/index.html",
+    "main.616e4f1e.css.map": "/CounterClics/static/css/main.616e4f1e.css.map",
+    "main.b0f3712b.js.map": "/CounterClics/static/js/main.b0f3712b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.616e4f1e.css",
+    "static/js/main.b0f3712b.js"
+  ]
+}
