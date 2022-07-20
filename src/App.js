@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+import logo from './images/logo.png'
+import Boton from './components/Button.jsx'
+import Counter from './components/Counter.jsx'
+import {useState} from 'react'
+
 
 function App() {
+  const [clicNumber, setNumber] = useState(0)
+  const clicManage = () => {
+    setNumber(clicNumber+1)
+  }
+
+  const restart = () => {
+    setNumber(0)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+    <div className='logo-contenedor' >
+
+
+      <div className='contenedor-principal' >
+        <Counter numClics={clicNumber} />
+        <Boton 
+          texto='Clic'
+          isclicButton={true}
+          clicManage={clicManage}
+        />
+        <Boton 
+          texto='Restart'
+          isclicButton={false}
+          clicManage={restart} />
+      </div>
+    </div>
     </div>
   );
 }
